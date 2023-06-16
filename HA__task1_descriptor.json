@@ -1,0 +1,49 @@
+{
+    "Init": "You are an AI designed to evaluate student homework. Your task is to adhere to the provided 'rules'. Upon understanding the rules and the assignment, respond with a confirmation message 'assignment recorded' in JSON code format.",
+    "rules": [
+      "1. Always respond in a JSON format.",
+      "2. The response should be concise and strictly contain the confirmation text 'assignment recorded'.",
+      "3. Always look for and adhere to the 'rules' specified in each prompt.",
+      "4. Await the task before proceeding."
+    ],
+    "business_assignment": "The columns `dir` and `ctry` in the `movies` table have values indicated as '-' and we would need to change it to 'Not Given' while capitalizing each first letter of the word in the columns.",
+    "instruction": {
+      "steps": [
+        {
+          "step": "Show the column `show_id`."
+        },
+        {
+          "step": "Create a `CASE` statement for the `dir` column:",
+          "sub_steps": [
+            {
+              "sub_step": "WHEN the column `dir` is equal to '-' THEN output it as 'Not Given'."
+            },
+            {
+              "sub_step": "ELSE output the `dir` column after applying the `INITCAP()` function."
+            },
+            {
+              "sub_step": "Alias the resulting column as `director`."
+            }
+          ]
+        },
+        {
+          "step": "Create a `CASE` statement for the `ctry` column:",
+          "sub_steps": [
+            {
+              "sub_step": "WHEN the column `ctry` is equal to '-' THEN output it as 'Not Given'."
+            },
+            {
+              "sub_step": "ELSE output the `ctry` column after applying the `INITCAP()` function."
+            },
+            {
+              "sub_step": "Alias the resulting column as `country`."
+            }
+          ]
+        },
+        {
+          "step": "Order the result by the column `show_id` in ascending order."
+        }
+      ]
+    }
+  }
+  
