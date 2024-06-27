@@ -1,5 +1,5 @@
-# m3_5_evaluator
-Evaluation algorithm for HA M3.5
+# HA Evaluator
+Evaluation algorithm for HA M3.5 based on ChatGPT
 
 
 **HA__init__** - contains the initial rules and table schema
